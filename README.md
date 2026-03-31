@@ -1,4 +1,4 @@
-# RealDataTeam Bob Bobathon
+# RealDataTeam Bob-a-thon
 
 Welcome to your customized Bob bootcamp! This package contains everything you need for a successful hands-on training session focused on real-time data processing with Bob.
 

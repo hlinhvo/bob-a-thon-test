@@ -1,0 +1,395 @@
+# Bob Client Bobathon Configuration - RealDataTeam
+# Real-time Data Processing System
+
+# =============================================================================
+# WORKFLOW PROGRESS TRACKING
+# Automatically updated as you complete bobathon setup steps
+# =============================================================================
+workflow_progress:
+  step_1_greeting: true
+  step_2_template_selection: true
+  step_3_client_info: true
+  step_4_tech_stack: true
+  step_5_code_generation_strategy: true  # MANDATORY - Set to both_starter_and_solutions
+  step_6_lab3_code_source: true  # MANDATORY - Set to sample_code
+  step_7_bob_differentiators: true  # MANDATORY - Added to all labs
+  step_8_use_cases: true
+  step_9_customize_labs: true
+  step_10_generate_starter_code: false  # Will be generated based on strategy
+  step_11_generate_solutions: false  # Will be generated based on strategy
+  step_12_resources: true
+  step_13_participants: true
+  step_14_schedule: true  # MANDATORY - Generated
+  step_15_readme: true  # MANDATORY - Generated
+  last_updated: "2026-03-31T03:32:00Z"
+
+# =============================================================================
+# CLIENT INFORMATION
+# =============================================================================
+client:
+  name: "RealDataTeam"
+  market: "Enterprise Software / Data Platform"
+  application_type: "Real-time Data Processing System"
+  contact:
+    primary: "Data Engineering Lead"
+    email: "engineering@realdatateam.com"
+  
+# =============================================================================
+# TECHNICAL ENVIRONMENT
+# =============================================================================
+technologies:
+  primary_language: "Python"
+  frameworks:
+    - "Apache Kafka"
+    - "Apache Spark"
+    - "FastAPI"
+  tools:
+    - "Docker"
+    - "Kubernetes"
+    - "Hadoop"
+    - "Git"
+    - "pytest"
+  infrastructure: "On-premise (Docker, Kubernetes, Hadoop)"
+  version_control: "Git"
+  ide_preferences:
+    - "VS Code"
+    - "PyCharm"
+
+# =============================================================================
+# KEY USE CASES
+# =============================================================================
+use_cases:
+  - name: "Stream Processing Pipelines"
+    description: "Build and optimize Kafka-based stream processing pipelines with proper error handling, monitoring, and scalability patterns"
+    priority: "high"
+    technologies: ["Python", "Apache Kafka", "Apache Spark"]
+    estimated_time: "45 minutes"
+    
+  - name: "Data Quality Validation"
+    description: "Implement comprehensive data quality checks and validation rules for incoming data streams, including schema validation, data profiling, and anomaly detection"
+    priority: "high"
+    technologies: ["Python", "Apache Spark", "FastAPI"]
+    estimated_time: "30 minutes"
+    
+  - name: "Real-time Analytics"
+    description: "Develop real-time analytics capabilities including aggregations, windowing operations, and streaming joins for immediate insights"
+    priority: "medium"
+    technologies: ["Python", "Apache Spark", "Kafka Streams"]
+    estimated_time: "30 minutes"
+    
+  - name: "Performance Optimization"
+    description: "Optimize data processing pipelines for throughput and latency, including partitioning strategies, caching, and resource tuning"
+    priority: "medium"
+    technologies: ["Python", "Apache Spark", "Kubernetes"]
+    estimated_time: "30 minutes"
+
+# =============================================================================
+# EXTERNAL RESOURCES
+# =============================================================================
+resources:
+  documentation:
+    - name: "RealDataTeam Data Platform Docs"
+      url: "Internal wiki or documentation portal"
+      description: "Internal documentation and standards for data platform"
+      
+  apis:
+    - name: "Data Platform APIs"
+      url: "Internal API documentation"
+      authentication: "OAuth 2.0 / API keys"
+      
+  repositories:
+    - name: "Data Platform Repository"
+      url: "Internal Git repository"
+      access_notes: "Team members have access via standard credentials"
+      
+  reference_materials:
+    - name: "Python Coding Standards"
+      url: "Internal coding standards documentation"
+
+# =============================================================================
+# BOBATHON SCHEDULE (6 hours)
+# =============================================================================
+schedule:
+  total_duration_hours: 6
+  date: "2026-04-15"
+  timezone: "Asia/Saigon (UTC+7)"
+  
+  # Morning Session: Introduction and Core Features (3 hours)
+  morning_session:
+    start_time: "09:00"
+    end_time: "12:00"
+    duration_minutes: 180
+    
+    segments:
+      - name: "Introduction & Setup"
+        start_time: "09:00"
+        duration_minutes: 30
+        topics:
+          - "Welcome and team introductions"
+          - "Bobathon objectives for RealDataTeam"
+          - "Bob overview: What is Bob and what can it do?"
+          - "Environment setup verification"
+          - "Q&A: Initial questions"
+        deliverables:
+          - "All participants have Bob running"
+          - "Understanding of bobathon goals"
+          - "Python/Kafka/Spark environment verified"
+      
+      - name: "Basic Bob Features"
+        start_time: "09:30"
+        duration_minutes: 90
+        topics:
+          - "Core commands and navigation"
+          - "Working with Python code"
+          - "File operations (read, write, edit)"
+          - "Code analysis and understanding (literate coding)"
+          - "Basic tool usage (execute_command, search_files)"
+          - "Working with Kafka and Spark code"
+          - "Bob Modes: Ask, Plan, and Code"
+          - "Bob Findings: Automated security and quality analysis"
+          - "Auto-approval for trusted operations"
+          - "Best practices for prompting Bob"
+        hands_on:
+          - lab_id: "lab1"
+          - duration: 30
+          - description: "Guided exercises with Python/Kafka code"
+        deliverables:
+          - "Comfort with basic Bob commands"
+          - "Understanding of Bob modes and when to use them"
+          - "Awareness of Bob Findings capabilities"
+          - "Completed Lab 1 exercises"
+      
+      - name: "Advanced Bob Features"
+        start_time: "11:00"
+        duration_minutes: 60
+        topics:
+          - "Complex workflows and multi-step tasks"
+          - "Working with multiple files simultaneously"
+          - "Code refactoring and optimization"
+          - "Debugging distributed systems"
+          - "Using apply_diff for precise changes"
+          - "Bob Differentiators: What makes Bob unique"
+          - "MCP servers and integrations (extensibility)"
+          - "Intelligent model selection and context optimization"
+          - "Leveraging modes in complex workflows"
+        hands_on:
+          - lab_id: "lab2"
+          - duration: 30
+          - description: "Advanced stream processing scenarios"
+        deliverables:
+          - "Understanding of advanced capabilities"
+          - "Awareness of Bob's unique differentiators"
+          - "Completed Lab 2 exercises"
+  
+  # Lunch Break
+  lunch_break:
+    start_time: "12:00"
+    end_time: "13:00"
+    duration_minutes: 60
+  
+  # Afternoon Session: RealDataTeam-Specific Application (3 hours)
+  afternoon_session:
+    start_time: "13:00"
+    end_time: "16:00"
+    duration_minutes: 180
+    
+    segments:
+      - name: "RealDataTeam-Specific Use Cases"
+        start_time: "13:00"
+        duration_minutes: 150
+        topics:
+          - "Stream processing pipeline development"
+          - "Data quality validation implementation"
+          - "Real-time analytics patterns"
+          - "Performance optimization techniques"
+          - "Best practices for RealDataTeam's tech stack"
+          - "Integration with on-premise infrastructure"
+        hands_on:
+          - lab_id: "lab3"
+          - duration: 90
+          - description: "Work on actual RealDataTeam scenarios"
+        deliverables:
+          - "Stream processing pipeline implemented"
+          - "Data quality validation in place"
+          - "Real-time analytics operational"
+          - "Performance optimizations applied"
+          - "Completed Lab 3 with real use cases"
+      
+      - name: "Wrap-up & Next Steps"
+        start_time: "15:30"
+        duration_minutes: 30
+        topics:
+          - "Key takeaways and lessons learned"
+          - "Resources for continued learning"
+          - "Support channels and escalation"
+          - "Action items and follow-up"
+          - "Feedback and Q&A"
+        deliverables:
+          - "Action plan for Bob adoption"
+          - "List of resources and contacts"
+          - "Feedback collected"
+
+# =============================================================================
+# LAB EXERCISES
+# =============================================================================
+labs:
+  # Code generation strategy for Labs 1 & 2 (REQUIRED - must be set during bobathon setup)
+  # Options: both_starter_and_solutions | starter_only | solutions_only | live_generation | no_generation
+  code_generation_strategy: "both_starter_and_solutions"
+  
+  # Lab 3 code source (REQUIRED - must be set during bobathon setup)
+  # Options: customer_codebase | sample_code | hybrid | no_code
+  lab3_code_source: "sample_code"
+  lab3_code_details: "Sample code will be generated matching RealDataTeam's Python/Kafka/Spark stack, including realistic stream processing pipelines, data quality validation, and real-time analytics scenarios."
+  
+  - id: "lab1"
+    name: "Basic Bob Operations with Python"
+    duration_minutes: 30
+    difficulty: "beginner"
+    objectives:
+      - "Navigate Python project structure"
+      - "Read and analyze Kafka consumer code"
+      - "Make simple code changes"
+      - "Run pytest tests"
+    prerequisites:
+      - "Bob installed and running"
+      - "Access to sample Python/Kafka project"
+      - "Python 3.9+ installed"
+    exercises:
+      - "Read and analyze a Kafka consumer implementation"
+      - "Update configuration for a data stream"
+      - "Add a new data transformation"
+      - "Run unit tests to verify changes"
+    
+  - id: "lab2"
+    name: "Advanced Stream Processing"
+    duration_minutes: 30
+    difficulty: "intermediate"
+    objectives:
+      - "Refactor stream processing logic"
+      - "Improve code quality and performance"
+      - "Add comprehensive error handling"
+      - "Update integration tests"
+    prerequisites:
+      - "Completed Lab 1"
+      - "Understanding of Kafka and Spark"
+    exercises:
+      - "Refactor Kafka message processing logic"
+      - "Add proper exception handling for stream failures"
+      - "Implement retry mechanisms"
+      - "Update tests for new behavior"
+    
+  - id: "lab3"
+    name: "RealDataTeam Real-time Processing Implementation"
+    duration_minutes: 90
+    difficulty: "advanced"
+    objectives:
+      - "Build production-ready stream processing pipeline"
+      - "Implement data quality validation"
+      - "Create real-time analytics"
+      - "Optimize for performance"
+    prerequisites:
+      - "Completed Labs 1 and 2"
+      - "Access to RealDataTeam codebase/environment"
+    exercises:
+      - "Implement Kafka consumer with data validation"
+      - "Add data quality checks and anomaly detection"
+      - "Create real-time aggregations and windowing"
+      - "Optimize pipeline performance"
+
+# =============================================================================
+# PARTICIPANT INFORMATION
+# =============================================================================
+participants:
+  expected_count: "5-6"
+  roles:
+    - "Senior Data Engineers"
+  skill_levels:
+    - "Senior: 5-6"
+  prerequisites:
+    - "Strong Python experience"
+    - "Kafka and Spark knowledge"
+    - "Distributed systems understanding"
+    - "Docker/Kubernetes familiarity"
+    - "VS Code or PyCharm installed"
+
+# =============================================================================
+# SUCCESS CRITERIA
+# =============================================================================
+success_criteria:
+  - "All participants can independently use Bob for data engineering tasks"
+  - "Team completes at least 2 high-priority use cases"
+  - "Stream processing pipeline implemented and tested"
+  - "Data quality validation framework in place"
+  - "Performance optimizations demonstrate measurable improvements"
+  - "Positive feedback from participants (>4/5 rating)"
+  - "Clear action plan for Bob adoption post-bobathon"
+
+# =============================================================================
+# FOLLOW-UP PLAN
+# =============================================================================
+follow_up:
+  - activity: "Office hours for stream processing questions"
+    timing: "1 week post-bobathon"
+    duration: "1 hour"
+    
+  - activity: "Check-in on pipeline implementations"
+    timing: "2 weeks post-bobathon"
+    duration: "30 minutes"
+    
+  - activity: "Advanced optimization workshop (optional)"
+    timing: "1 month post-bobathon"
+    duration: "2 hours"
+
+# =============================================================================
+# NOTES
+# =============================================================================
+notes: |
+  Special considerations for RealDataTeam:
+  
+  - All senior engineers - can move at faster pace with more complex examples
+  - On-premise infrastructure - ensure all examples work in on-premise environment
+  - Focus on distributed systems patterns and performance optimization
+  - Real-time processing requires attention to latency and throughput
+  - Data quality is critical - emphasize validation and monitoring
+  
+  Technical environment:
+  - Python 3.9+ with Kafka and Spark
+  - Docker and Kubernetes for orchestration
+  - Hadoop for distributed storage
+  - Git for version control
+  - pytest for testing
+
+# =============================================================================
+# BUSINESS VALUE TRACKING
+# =============================================================================
+business_value_tracking:
+  enabled: true
+  collection_points:
+    after_each_lab: true
+    end_of_bobathon: true
+    post_bobathon_followup: true
+    followup_timing: "2-4 weeks"
+  
+  survey_tool: "[e.g., Google Forms, Microsoft Forms, Slido - TBD]"
+  survey_links:
+    lab1: "[Survey URL - to be created]"
+    lab2: "[Survey URL - to be created]"
+    lab3: "[Survey URL - to be created]"
+    end_of_bobathon: "[Survey URL - to be created]"
+    followup: "[Survey URL - to be created]"
+  
+  metrics_to_track:
+    - time_savings  # Hours saved per week
+    - quality_improvements  # % bugs caught, code consistency
+    - security_enhancements  # Vulnerabilities prevented
+    - adoption_rate  # % of team using Bob
+    - ease_of_use  # 1-5 scale rating
+    - likelihood_to_adopt  # 1-5 scale rating
+  
+  notes: |
+    Business value tracking helps demonstrate ROI to stakeholders and improves
+    future bobathons. Recommended approach: collect data after each lab (quick),
+    at end of bobathon (comprehensive), and 2-4 weeks later (actual results).
+
+# Made with Bob

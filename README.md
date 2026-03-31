@@ -55,10 +55,16 @@ Before the bobathon, ensure you have:
    - Python extensions installed
    - Terminal access
 
-### Installation
+### Installation & Sample Code
 
-For detailed Bob installation instructions, see:
+**Bob Installation:**
 - **[Bob Installation Guide](resources/bob-installation.md)** - Complete setup instructions for all platforms
+
+**Sample Code Project:**
+- The facilitator will provide a sample Python/Kafka/Spark project for hands-on exercises
+- This includes stream processing code, Kafka consumers/producers, and test files
+- Clone the sample project before the bobathon begins
+- **Note:** Lab exercises reference files in this sample project (e.g., `kafka_config.py`, `consumer.py`)
 
 ## 📚 Materials Included
 

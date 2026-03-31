@@ -15,10 +15,24 @@ By the end of this lab, you will be able to:
 
 ## 📋 Setup
 
+### ⚠️ Important: Sample Code Project Required
+
+**This lab builds on the sample Python/Kafka project from Lab 1.** You'll need:
+- The same sample project with multiple Python files
+- Stream processing code with Kafka consumers/producers
+- Test files for verification
+
+**If you don't have the sample project:**
+1. Complete Lab 1 setup first
+2. Ensure you have the sample code repository from your facilitator
+3. Have the project open in your IDE
+
+### Prerequisites Checklist
+
 Before starting, ensure you have:
-- [ ] Completed Lab 1
+- [ ] **Completed Lab 1**
 - [ ] Bob running in your IDE
-- [ ] Access to the stream processing project with multiple Python files
+- [ ] **Sample stream processing project open** (from Lab 1)
 - [ ] Understanding of basic Bob tools
 - [ ] Kafka and Spark environments accessible
 

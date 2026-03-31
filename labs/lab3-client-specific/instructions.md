@@ -16,9 +16,29 @@ By the end of this lab, you will be able to:
 
 ## 📋 Setup
 
+### ⚠️ Important: Sample Code Project Required
+
+**This lab uses the sample Python/Kafka/Spark project from Labs 1 & 2.** You'll work with:
+- Stream processing pipelines
+- Data quality validation code
+- Real-time analytics implementations
+- Performance optimization scenarios
+
+**The facilitator will provide:**
+- Sample code matching RealDataTeam's use cases
+- Kafka/Spark configurations
+- Test data and scenarios
+
+**If you don't have the sample project:**
+1. Complete Labs 1 and 2 first
+2. Ensure you have all sample code from your facilitator
+3. Verify Kafka/Spark environments are accessible
+
+### Prerequisites Checklist
+
 Before starting, ensure you have:
-- [ ] Completed Labs 1 and 2
-- [ ] Access to the sample stream processing project
+- [ ] **Completed Labs 1 and 2**
+- [ ] **Sample stream processing project open** (provided by facilitator)
 - [ ] Python 3.9+ with Kafka and Spark libraries installed
 - [ ] Kafka cluster accessible (local or remote)
 - [ ] Spark environment configured

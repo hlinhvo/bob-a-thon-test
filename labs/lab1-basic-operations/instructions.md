@@ -19,9 +19,25 @@ By the end of this lab, you will be able to:
 
 ## 📋 Setup
 
+### ⚠️ Important: Sample Code Project Required
+
+**This lab requires a sample Python/Kafka project to work with.** The facilitator will provide:
+- Sample project structure with `src/streaming/` directory
+- Python files: `kafka_config.py`, `consumer.py`, `processor.py`
+- Test files and configuration
+- Kafka consumer/producer implementations
+
+**If you don't have the sample project yet:**
+1. Ask your facilitator for the sample code repository
+2. Clone it to your local machine
+3. Open it in your IDE alongside Bob
+4. Then proceed with the exercises below
+
+### Prerequisites Checklist
+
 Before starting, ensure you have:
 - [ ] Bob running in your IDE
-- [ ] Access to the sample Python/Kafka project (provided by facilitator)
+- [ ] **Sample Python/Kafka project cloned and open** (provided by facilitator)
 - [ ] Python 3.9+ installed
 - [ ] Kafka cluster accessible (local or remote)
 - [ ] Basic understanding of Python and stream processing
